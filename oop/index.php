@@ -1,5 +1,7 @@
 <?php 
-require('animal.php');
+require('Animal.php');
+require('Frog.php');
+require('Ape.php');
 
 $sheep = new Animal("shaun");
 

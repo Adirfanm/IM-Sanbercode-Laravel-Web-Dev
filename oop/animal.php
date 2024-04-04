@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Animal
 {
@@ -25,22 +25,3 @@ class Animal
     }
 }
 
-class Ape extends Animal
-{
-    public function __construct($name) {
-        $this->legs = 2;
-        $this->name = $name;
-    }
-    public function yell()
-    {
-        echo "Auuuoooo";
-    }
-}
-
-class Frog extends Animal
-{
-    public function jump()
-    {
-        echo "Hop hop";
-    }
-}
