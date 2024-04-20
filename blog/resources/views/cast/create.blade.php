@@ -30,6 +30,6 @@
             <label for="bio" class="form-label">Bio:</label>
             <textarea id="bio" name="bio" required class="form-control"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Create Cast Member</button>
+        <button type="submit" class="btn btn-primary">Create</button>
     </form>
 @endsection

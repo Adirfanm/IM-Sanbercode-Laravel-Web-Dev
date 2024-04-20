@@ -30,6 +30,6 @@
             <label for="bio" class="form-label">Bio:</label>
             <textarea id="bio" name="bio" required class="form-control">{{ $cast->bio }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Update Cast Member</button>
+        <button type="submit" class="btn btn-primary">Update</button>
     </form>
 @endsection

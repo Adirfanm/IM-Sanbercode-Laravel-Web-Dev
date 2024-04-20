@@ -67,7 +67,7 @@ class CastController extends Controller
         if (!$cast) {
             return redirect('/cast')->with('error', 'Cast member not found.');
         }
-        return view('cast.edit', compact('cast'));
+        return view('cast.edit', ['cast' => $cast]);
     }
 
     /**
@@ -81,7 +81,7 @@ class CastController extends Controller
             'bio' => 'required',
         ]);
 
-        $affected = DB::table('casts')
+        $updated = DB::table('casts')
                       ->where('id', $id)
                       ->update([
                           'name' => $request->input('name'),
@@ -89,7 +89,7 @@ class CastController extends Controller
                           'bio' => $request->input('bio'),
                       ]);
 
-        if ($affected) {
+        if ($updated) {
             return redirect('/cast')->with('success', 'Cast member updated successfully.');
         } else {
             return back()->with('error', 'Failed to update cast member.');
