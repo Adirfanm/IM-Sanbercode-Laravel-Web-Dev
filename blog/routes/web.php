@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CastController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,4 +26,4 @@ Route::get('/data-tables', function(){
     return view('pages.data-table');
 });
 
-
+Route::resource('cast', CastController::class);

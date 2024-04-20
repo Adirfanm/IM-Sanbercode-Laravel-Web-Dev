@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('casts', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
+            $table->integer('age');
             $table->text('bio')->nullable();
             $table->timestamps();
         });
